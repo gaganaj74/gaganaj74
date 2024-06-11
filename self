@@ -1,10 +1,23 @@
-- 👋 Hi, I’m @gaganaj74
-- 👀 I’m interested in ...backend development
-- 🌱 I’m currently learning ...javascript
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+class musicPlayer {
 
-<!---
-gaganaj74/gaganaj74 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+  static class song {
+      private String title;
+      private String artist;
+      
+      public song(String title, String artist){
+          this.title=title;
+          this.artist=artist;
+      }
+       public void play() {
+            System.out.println("Now playing " + title + " by " + artist);
+        }
+   
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    musicPlayer.song myInner = new musicPlayer.song("ABC","XYZ");
+    myInner.play();
+  }
+}
