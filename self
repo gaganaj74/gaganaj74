@@ -1,5 +1,5 @@
 class musicPlayer {
-
+ 
   static class song {
       private String title;
       private String artist;
@@ -13,11 +13,9 @@ class musicPlayer {
         }
    
   }
-}
-
-public class Main {
-  public static void main(String[] args) {
-    musicPlayer.song myInner = new musicPlayer.song("ABC","XYZ");
+  public static void main(String[] args){
+  song myInner = new song("ABC","XYZ");
     myInner.play();
   }
 }
+
